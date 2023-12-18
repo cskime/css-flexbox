@@ -16,6 +16,11 @@ $justifyContentSelect.addEventListener("change", (event) => {
   $flexbox.style.justifyContent = event.target.value;
 });
 
+const $alignItemsSelect = document.querySelector("#align-items select");
+$alignItemsSelect.addEventListener("change", (event) => {
+  $flexbox.style.alignItems = event.target.value;
+});
+
 /* Width / Height */
 
 function toggleSize(checked, token) {
