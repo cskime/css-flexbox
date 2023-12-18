@@ -10,3 +10,8 @@ const $flexWrapSelect = document.querySelector("#flex-wrap select");
 $flexWrapSelect.addEventListener("change", (event) => {
   $flexbox.style.flexWrap = event.target.value;
 });
+
+const $justifyContentSelect = document.querySelector("#justify-content select");
+$justifyContentSelect.addEventListener("change", (event) => {
+  $flexbox.style.justifyContent = event.target.value;
+});
