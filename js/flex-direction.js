@@ -5,3 +5,8 @@ const $flexDirectionSelect = document.querySelector("#flex-direction select");
 $flexDirectionSelect.addEventListener("change", (event) => {
   $flexbox.style.flexDirection = event.target.value;
 });
+
+const $flexWrapSelect = document.querySelector("#flex-wrap select");
+$flexWrapSelect.addEventListener("change", (event) => {
+  $flexbox.style.flexWrap = event.target.value;
+});
