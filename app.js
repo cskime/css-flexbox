@@ -1,6 +1,6 @@
 const $flexbox = document.getElementById("flexbox");
 const $flexItems = document.querySelectorAll(".item");
-const $flexItemThird = document.querySelector(".item:nth-child(3)");
+const $flexItemTeal = document.querySelector(".teal");
 
 const $flexDirectionSelect = document.querySelector("#flex-direction select");
 $flexDirectionSelect.addEventListener("change", (event) => {
@@ -29,7 +29,12 @@ $alignContentSelect.addEventListener("change", (event) => {
 
 const $alignSelfSelect = document.querySelector("#align-self select");
 $alignSelfSelect.addEventListener("change", (event) => {
-  $flexItemThird.style.alignSelf = event.target.value;
+  $flexItemTeal.style.alignSelf = event.target.value;
+});
+
+const $orderSelect = document.querySelector("#order select");
+$orderSelect.addEventListener("change", (event) => {
+  $flexItemTeal.style.order = event.target.value;
 });
 
 /* Width / Height */

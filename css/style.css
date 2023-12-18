@@ -49,6 +49,10 @@ main {
   align-items: center;
 }
 
+.teal {
+  background-color: teal;
+}
+
 #flexbox-code {
   display: flex;
   flex-direction: column;
