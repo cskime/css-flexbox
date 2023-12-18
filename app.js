@@ -1,5 +1,6 @@
 const $flexbox = document.getElementById("flexbox");
-const $flexboxContents = document.querySelectorAll(".item");
+const $flexItems = document.querySelectorAll(".item");
+const $flexItemThird = document.querySelector(".item:nth-child(3)");
 
 const $flexDirectionSelect = document.querySelector("#flex-direction select");
 $flexDirectionSelect.addEventListener("change", (event) => {
@@ -26,10 +27,15 @@ $alignContentSelect.addEventListener("change", (event) => {
   $flexbox.style.alignContent = event.target.value;
 });
 
+const $alignSelfSelect = document.querySelector("#align-self select");
+$alignSelfSelect.addEventListener("change", (event) => {
+  $flexItemThird.style.alignSelf = event.target.value;
+});
+
 /* Width / Height */
 
 function toggleSize(checked, token) {
-  $flexboxContents.forEach((content) => {
+  $flexItems.forEach((content) => {
     if (checked) {
       content.classList.add(token);
     } else {
