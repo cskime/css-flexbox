@@ -1,4 +1,6 @@
 @import "./reset.css";
+@import "./components/size-placeholder.css";
+@import "./components/line-through.css";
 @import "./components/property.css";
 
 body {
