@@ -48,3 +48,8 @@ main {
   justify-content: center;
   align-items: center;
 }
+
+#flexbox-code {
+  display: flex;
+  flex-direction: column;
+}
