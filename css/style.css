@@ -1,6 +1,6 @@
 @import "./reset.css";
 @import "./components/size-placeholder.css";
-@import "./components/line-through.css";
+@import "./components/disabled.css";
 @import "./components/property.css";
 
 body {
@@ -53,7 +53,10 @@ main {
   background-color: teal;
 }
 
-#flexbox-code {
+#flexbox-code,
+#flex-item-code,
+#flex-item-teal-code {
   display: flex;
   flex-direction: column;
+  gap: 4px;
 }

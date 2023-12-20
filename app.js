@@ -50,11 +50,11 @@ function toggleSize(checked, token) {
 }
 
 function toggleLineThrough(checked, element) {
-  const LINE_THROUGH_CLASSNAME = "line-through";
+  const DISABLED_CLASSNAME = "disabled";
   if (checked) {
-    element.classList.remove(LINE_THROUGH_CLASSNAME);
+    element.classList.remove(DISABLED_CLASSNAME);
   } else {
-    element.classList.add(LINE_THROUGH_CLASSNAME);
+    element.classList.add(DISABLED_CLASSNAME);
   }
 }
 
