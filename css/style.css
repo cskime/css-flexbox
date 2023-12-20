@@ -24,6 +24,8 @@ main {
   gap: 12px;
 }
 
+/* Editor */
+
 #main-editor {
   background-color: #ecf0f1;
   width: 350px;
@@ -37,6 +39,16 @@ main {
   font-family: monospace;
 }
 
+#flexbox-code,
+#flex-item-code,
+#flex-item-teal-code {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Preview */
+
 #main-preview {
   width: 500px;
   height: 500px;
@@ -44,23 +56,11 @@ main {
   display: flex;
 }
 
-.item {
+.flex-item {
   background-color: tomato;
   color: white;
   font-size: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.teal {
-  background-color: teal;
-}
-
-#flexbox-code,
-#flex-item-code,
-#flex-item-teal-code {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
 }

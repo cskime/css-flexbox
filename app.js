@@ -1,6 +1,27 @@
 const $flexbox = document.getElementById("main-preview");
-const $flexItems = document.querySelectorAll(".item");
-const $flexItemTeal = document.querySelector(".teal");
+const $flexItems = document.querySelectorAll(".flex-item");
+const $flexItemThird = document.querySelector(".flex-item:nth-child(3)");
+
+/* Initialize */
+
+const itemColors = [
+  "#16a085",
+  "#27ae60",
+  "#2980b9",
+  "#8e44ad",
+  "#2c3e50",
+  "#f1c40f",
+  "#e67e22",
+  "#e74c3c",
+];
+function initializeItemColor() {
+  $flexItems.forEach((item, index) => {
+    item.style.backgroundColor = itemColors[index];
+  });
+}
+initializeItemColor();
+
+/* Event Handler */
 
 const $flexDirectionSelect = document.querySelector("#flex-direction select");
 $flexDirectionSelect.addEventListener("change", (event) => {
@@ -29,12 +50,12 @@ $alignContentSelect.addEventListener("change", (event) => {
 
 const $alignSelfSelect = document.querySelector("#align-self select");
 $alignSelfSelect.addEventListener("change", (event) => {
-  $flexItemTeal.style.alignSelf = event.target.value;
+  $flexItemThird.style.alignSelf = event.target.value;
 });
 
 const $orderSelect = document.querySelector("#order select");
 $orderSelect.addEventListener("change", (event) => {
-  $flexItemTeal.style.order = event.target.value;
+  $flexItemThird.style.order = event.target.value;
 });
 
 /* Width / Height */
