@@ -2,3 +2,10 @@
   display: flex;
   align-items: center;
 }
+
+.property select {
+  background-color: unset;
+  border: unset;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
