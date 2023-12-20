@@ -10,6 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0;
 }
 
 header {
@@ -63,4 +64,23 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* responsiveness */
+
+@media screen and (max-width: 862px) {
+  main {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  #main-editor {
+    width: 400px;
+    font-size: 14px;
+  }
+
+  #main-preview {
+    width: 400px;
+    height: 400px;
+  }
 }
