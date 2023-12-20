@@ -4,149 +4,151 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Flexbox</title>
+    <title>CSS Flexbox Preview</title>
   </head>
   <body>
-    <header>
-      <span>Flexbox</span>
-    </header>
-    <aside>
-      <div id="flexbox-code">
-        <span>#flexbox&nbsp;&#123;</span>
-        <span>&nbsp;&nbsp;display: flex;</span>
-        <div id="flex-direction" class="property">
-          <span>&nbsp;&nbsp;</span>
-          <span>flex-direction:&nbsp;</span>
-          <select>
-            <option selected>row</option>
-            <option>row-reverse</option>
-            <option>column</option>
-            <option>column-reverse</option>
-          </select>
-          <div>;</div>
+    <header>CSS Flexbox Preview</header>
+    <main>
+      <div id="main-editor">
+        <div id="flexbox-code">
+          <span>#flexbox&nbsp;&#123;</span>
+          <span>&nbsp;&nbsp;display: flex;</span>
+          <div id="flex-direction" class="property">
+            <span>&nbsp;&nbsp;</span>
+            <span>flex-direction:&nbsp;</span>
+            <select>
+              <option selected>row</option>
+              <option>row-reverse</option>
+              <option>column</option>
+              <option>column-reverse</option>
+            </select>
+            <div>;</div>
+          </div>
+          <div id="flex-wrap" class="property">
+            <span>&nbsp;&nbsp;</span>
+            <span>flex-wrap:&nbsp;</span>
+            <select>
+              <option selected>nowrap</option>
+              <option>wrap</option>
+              <option>wrap-reverse</option>
+            </select>
+            <div>;</div>
+          </div>
+          <div id="justify-content" class="property">
+            <span>&nbsp;&nbsp;</span>
+            <span>justify-content:&nbsp;</span>
+            <select>
+              <option>center</option>
+              <option>start</option>
+              <option>end</option>
+              <option selected>flex-start</option>
+              <option>flex-end</option>
+              <option>left</option>
+              <option>right</option>
+              <option>space-between</option>
+              <option>space-around</option>
+              <option>space-evenly</option>
+              <option>stretch</option>
+            </select>
+            <div>;</div>
+          </div>
+          <div id="align-items" class="property">
+            <span>&nbsp;&nbsp;align-items:&nbsp;</span>
+            <select>
+              <option selected>stretch</option>
+              <option>center</option>
+              <option>start</option>
+              <option>end</option>
+              <option>flex-start</option>
+              <option>flex-end</option>
+              <option>self-start</option>
+              <option>self-end</option>
+              <option>baseline</option>
+            </select>
+            <div>;</div>
+          </div>
+          <div id="align-content" class="property">
+            <span>&nbsp;&nbsp;align-content:&nbsp;</span>
+            <select>
+              <option>center</option>
+              <option>start</option>
+              <option>end</option>
+              <option>flex-start</option>
+              <option>flex-end</option>
+              <option>baseline</option>
+              <option>space-between</option>
+              <option>space-around</option>
+              <option>space-evenly</option>
+              <option selected>stretch</option>
+            </select>
+            <div>;</div>
+          </div>
+          <div>&#125;</div>
         </div>
-        <div id="flex-wrap" class="property">
-          <span>&nbsp;&nbsp;</span>
-          <span>flex-wrap:&nbsp;</span>
-          <select>
-            <option selected>nowrap</option>
-            <option>wrap</option>
-            <option>wrap-reverse</option>
-          </select>
-          <div>;</div>
+        <br />
+        <div id="flex-item-code">
+          <span>.flex-item&nbsp;&#123;</span>
+          <label for="width-checkbox" class="property">
+            <span>&nbsp;&nbsp;</span>
+            <span id="width-checkbox-text" class="disabled">
+              width: 100px;
+            </span>
+            <input type="checkbox" id="width-checkbox" />
+          </label>
+          <label for="height-checkbox" class="property">
+            <span>&nbsp;&nbsp;</span>
+            <span id="height-checkbox-text" class="disabled">
+              height: 100px;
+            </span>
+            <input type="checkbox" id="height-checkbox" />
+          </label>
+          <div>&#125;</div>
         </div>
-        <div id="justify-content" class="property">
-          <span>&nbsp;&nbsp;</span>
-          <span>justify-content:&nbsp;</span>
-          <select>
-            <option>center</option>
-            <option>start</option>
-            <option>end</option>
-            <option selected>flex-start</option>
-            <option>flex-end</option>
-            <option>left</option>
-            <option>right</option>
-            <option>space-between</option>
-            <option>space-around</option>
-            <option>space-evenly</option>
-            <option>stretch</option>
-          </select>
-          <div>;</div>
+        <br />
+        <div id="flex-item-teal-code">
+          <span>.teal &#123;</span>
+          <div id="align-self" class="property">
+            <span>&nbsp;&nbsp;align-self:&nbsp;</span>
+            <select>
+              <option>center</option>
+              <option>start</option>
+              <option>end</option>
+              <option>self-start</option>
+              <option>self-end</option>
+              <option>flex-start</option>
+              <option>flex-end</option>
+              <option>baseline</option>
+              asdfasdfasdfasdf asd fas
+              <dfn
+                >asd
+                <fieldset></fieldset>
+              </dfn>
+              <option selected>stretch</option>
+            </select>
+            <div>;</div>
+          </div>
+          <div id="order" class="property">
+            <span>&nbsp;&nbsp;order:&nbsp;</span>
+            <select>
+              <option>-1</option>
+              <option selected>0</option>
+              <option>1</option>
+            </select>
+            <div>;</div>
+          </div>
+          <div>&#125;</div>
         </div>
-        <div id="align-items" class="property">
-          <span>&nbsp;&nbsp;align-items:&nbsp;</span>
-          <select>
-            <option selected>stretch</option>
-            <option>center</option>
-            <option>start</option>
-            <option>end</option>
-            <option>flex-start</option>
-            <option>flex-end</option>
-            <option>self-start</option>
-            <option>self-end</option>
-            <option>baseline</option>
-          </select>
-          <div>;</div>
-        </div>
-        <div id="align-content" class="property">
-          <span>&nbsp;&nbsp;align-content:&nbsp;</span>
-          <select>
-            <option>center</option>
-            <option>start</option>
-            <option>end</option>
-            <option>flex-start</option>
-            <option>flex-end</option>
-            <option>baseline</option>
-            <option>space-between</option>
-            <option>space-around</option>
-            <option>space-evenly</option>
-            <option selected>stretch</option>
-          </select>
-          <div>;</div>
-        </div>
-        <div>&#125;</div>
       </div>
-      <br />
-      <div id="flex-item-code">
-        <span>.flex-item&nbsp;&#123;</span>
-        <label for="width-checkbox" class="property">
-          <span>&nbsp;&nbsp;</span>
-          <span id="width-checkbox-text" class="disabled"> width: 100px; </span>
-          <input type="checkbox" id="width-checkbox" />
-        </label>
-        <label for="height-checkbox" class="property">
-          <span>&nbsp;&nbsp;</span>
-          <span id="height-checkbox-text" class="disabled">
-            height: 100px;
-          </span>
-          <input type="checkbox" id="height-checkbox" />
-        </label>
-        <div>&#125;</div>
+      <div id="main-preview">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item teal">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
       </div>
-      <br />
-      <div id="flex-item-teal-code">
-        <span>.teal &#123;</span>
-        <div id="align-self" class="property">
-          <span>&nbsp;&nbsp;align-self:&nbsp;</span>
-          <select>
-            <option>center</option>
-            <option>start</option>
-            <option>end</option>
-            <option>self-start</option>
-            <option>self-end</option>
-            <option>flex-start</option>
-            <option>flex-end</option>
-            <option>baseline</option>
-            asdfasdfasdfasdf asd fas
-            <dfn
-              >asd
-              <fieldset></fieldset>
-            </dfn>
-            <option selected>stretch</option>
-          </select>
-          <div>;</div>
-        </div>
-        <div id="order" class="property">
-          <span>&nbsp;&nbsp;order:&nbsp;</span>
-          <select>
-            <option>-1</option>
-            <option selected>0</option>
-            <option>1</option>
-          </select>
-          <div>;</div>
-        </div>
-        <div>&#125;</div>
-      </div>
-    </aside>
-    <main id="flexbox">
-      <div class="item">1</div>
-      <div class="item">2</div>
-      <div class="item teal">3</div>
-      <div class="item">4</div>
-      <div class="item">5</div>
-      <div class="item">6</div>
-      <div class="item">7</div>
-      <div class="item">8</div>
     </main>
     <script src="./app.js"></script>
   </body>

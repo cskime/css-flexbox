@@ -1,4 +1,4 @@
-const $flexbox = document.getElementById("flexbox");
+const $flexbox = document.getElementById("main-preview");
 const $flexItems = document.querySelectorAll(".item");
 const $flexItemTeal = document.querySelector(".teal");
 
