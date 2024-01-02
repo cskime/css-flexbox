@@ -34,9 +34,12 @@ main {
   padding: 24px;
   border-radius: 8px;
   font-size: 16px;
-  display: flex;
-  flex-direction: column;
   font-family: monospace;
+}
+
+#main-editor select {
+  font-family: monospace;
+  font-size: 16px;
 }
 
 #flexbox-code,
