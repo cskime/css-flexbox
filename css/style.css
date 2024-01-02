@@ -37,11 +37,6 @@ main {
   font-family: monospace;
 }
 
-#main-editor select {
-  font-family: monospace;
-  font-size: 16px;
-}
-
 #flexbox-code,
 #flex-item-code,
 #flex-item-teal-code {

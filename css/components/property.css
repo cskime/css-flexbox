@@ -8,4 +8,6 @@
   border: unset;
   text-align: center;
   border-bottom: 1px solid black;
+  font-family: monospace;
+  font-size: 16px;
 }
