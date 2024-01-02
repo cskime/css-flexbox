@@ -70,8 +70,8 @@ function toggleSize(checked, token) {
   });
 }
 
+const DISABLED_CLASSNAME = "disabled";
 function toggleLineThrough(checked, element) {
-  const DISABLED_CLASSNAME = "disabled";
   if (checked) {
     element.classList.remove(DISABLED_CLASSNAME);
   } else {
@@ -93,4 +93,22 @@ const $heightCheckboxLabel = document.getElementById("height-checkbox-text");
 $heightCheckbox.addEventListener("change", (event) => {
   toggleSize(event.target.checked, HEIGHT_PLACEHOLDER_CLASSNAME);
   toggleLineThrough(event.target.checked, $heightCheckboxLabel);
+});
+
+/* Gap */
+
+function toggle(checked, token, element) {
+  if (checked) {
+    element.classList.add(token);
+  } else {
+    element.classList.remove(token);
+  }
+}
+
+const GAP_CLASSNAME = "gap";
+const $gapCheckbox = document.getElementById("gap-checkbox");
+const $gapCheckboxLabel = document.getElementById("gap-checkbox-text");
+$gapCheckbox.addEventListener("change", (event) => {
+  toggle(event.target.checked, GAP_CLASSNAME, $flexbox);
+  toggle(!event.target.checked, DISABLED_CLASSNAME, $gapCheckboxLabel);
 });
