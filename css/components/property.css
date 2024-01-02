@@ -4,9 +4,10 @@
 }
 
 .property select {
+  all: unset;
   background-color: unset;
   border: unset;
-  text-align: center;
+  text-align-last: center; /* to support Safari, use this property instead of `text-align` */
   border-bottom: 1px solid black;
   font-family: monospace;
   font-size: 16px;
