@@ -112,3 +112,21 @@ $gapCheckbox.addEventListener("change", (event) => {
   toggle(event.target.checked, GAP_CLASSNAME, $flexbox);
   toggle(!event.target.checked, DISABLED_CLASSNAME, $gapCheckboxLabel);
 });
+
+const ROW_GAP_CLASSNAME = "row-gap";
+const $rowGapCheckbox = document.getElementById("row-gap-checkbox");
+const $rowGapCheckboxLabel = document.getElementById("row-gap-checkbox-text");
+$rowGapCheckbox.addEventListener("change", (event) => {
+  toggle(event.target.checked, ROW_GAP_CLASSNAME, $flexbox);
+  toggle(!event.target.checked, DISABLED_CLASSNAME, $rowGapCheckboxLabel);
+});
+
+const COLUMN_GAP_CLASSNAME = "column-gap";
+const $columnGapCheckbox = document.getElementById("column-gap-checkbox");
+const $columnGapCheckboxLabel = document.getElementById(
+  "column-gap-checkbox-text"
+);
+$columnGapCheckbox.addEventListener("change", (event) => {
+  toggle(event.target.checked, COLUMN_GAP_CLASSNAME, $flexbox);
+  toggle(!event.target.checked, DISABLED_CLASSNAME, $columnGapCheckboxLabel);
+});
