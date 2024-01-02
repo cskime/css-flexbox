@@ -58,26 +58,28 @@ $orderSelect.addEventListener("change", (event) => {
   $flexItemThird.style.order = event.target.value;
 });
 
-/* Width / Height */
+/* Toggle */
+
+function toggle(checked, token, element) {
+  if (checked) {
+    element.classList.add(token);
+  } else {
+    element.classList.remove(token);
+  }
+}
 
 function toggleSize(checked, token) {
   $flexItems.forEach((content) => {
-    if (checked) {
-      content.classList.add(token);
-    } else {
-      content.classList.remove(token);
-    }
+    toggle(checked, token, content);
   });
 }
 
-const DISABLED_CLASSNAME = "disabled";
 function toggleLineThrough(checked, element) {
-  if (checked) {
-    element.classList.remove(DISABLED_CLASSNAME);
-  } else {
-    element.classList.add(DISABLED_CLASSNAME);
-  }
+  const DISABLED_CLASSNAME = "disabled";
+  toggle(!checked, DISABLED_CLASSNAME, element);
 }
+
+/* Width / Height */
 
 const WIDTH_PLACEHOLDER_CLASSNAME = "width-placeholder";
 const $widthCheckbox = document.getElementById("width-checkbox");
@@ -97,20 +99,12 @@ $heightCheckbox.addEventListener("change", (event) => {
 
 /* Gap */
 
-function toggle(checked, token, element) {
-  if (checked) {
-    element.classList.add(token);
-  } else {
-    element.classList.remove(token);
-  }
-}
-
 const GAP_CLASSNAME = "gap";
 const $gapCheckbox = document.getElementById("gap-checkbox");
 const $gapCheckboxLabel = document.getElementById("gap-checkbox-text");
 $gapCheckbox.addEventListener("change", (event) => {
   toggle(event.target.checked, GAP_CLASSNAME, $flexbox);
-  toggle(!event.target.checked, DISABLED_CLASSNAME, $gapCheckboxLabel);
+  toggleLineThrough(event.target.checked, $gapCheckboxLabel);
 });
 
 const ROW_GAP_CLASSNAME = "row-gap";
@@ -118,7 +112,7 @@ const $rowGapCheckbox = document.getElementById("row-gap-checkbox");
 const $rowGapCheckboxLabel = document.getElementById("row-gap-checkbox-text");
 $rowGapCheckbox.addEventListener("change", (event) => {
   toggle(event.target.checked, ROW_GAP_CLASSNAME, $flexbox);
-  toggle(!event.target.checked, DISABLED_CLASSNAME, $rowGapCheckboxLabel);
+  toggleLineThrough(event.target.checked, $rowGapCheckboxLabel);
 });
 
 const COLUMN_GAP_CLASSNAME = "column-gap";
@@ -128,5 +122,5 @@ const $columnGapCheckboxLabel = document.getElementById(
 );
 $columnGapCheckbox.addEventListener("change", (event) => {
   toggle(event.target.checked, COLUMN_GAP_CLASSNAME, $flexbox);
-  toggle(!event.target.checked, DISABLED_CLASSNAME, $columnGapCheckboxLabel);
+  toggleLineThrough(event.target.checked, $columnGapCheckboxLabel);
 });
