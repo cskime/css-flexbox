@@ -1,8 +1,6 @@
 # Flexbox Preview
 
-<p style="text-align:center">
-    <img src="./img/example.png" style="width:600px" />
-</p>
+<img src="./img/example.png" width="600px" />
 
 This project is for people who just learn the css. It helps to study flexbox and to understand the behavior of the flex container and children.
 
