@@ -13,6 +13,8 @@ You can change these properties:
 - `justify-content`
 - `align-items`
 - `align-content`
+- `gap`
+- `row-gap`, `column-gap`
 - `align-self`
 - `order`
 
